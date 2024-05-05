@@ -10,9 +10,16 @@ import pyautogui
 
 engine = pyttsx3.init()
 
+# def speak(audio):
+#     engine.say(audio)
+#     engine.runAndWait()
+
 def speak(audio):
-    engine.say(audio)
-    engine.runAndWait()
+    if not engine.isBusy():
+        engine.say(audio)
+        engine.runAndWait()
+    else:
+        print("Engine is busy, cannot speak at the moment")
 
 def time():
     Time = datetime.datetime.now().strftime("%I:%M:%S")
