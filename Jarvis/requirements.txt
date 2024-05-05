@@ -2,3 +2,4 @@ Pyttsx3
 SpeechRecognition
 Wikipedia
 Flask
+Gunicorn
