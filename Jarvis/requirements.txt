@@ -1,5 +1,4 @@
 Pyttsx3
 SpeechRecognition
 Wikipedia
-Pyautogui
 Flask

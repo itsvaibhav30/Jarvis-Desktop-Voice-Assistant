@@ -62,10 +62,10 @@ def date():
     speak(year)
     print("The current date is " + str(day) + "/" + str(month) + "/" + str(year))
     
-def screenshot():
-    img = pyautogui.screenshot()
-    img_path = os.path.expanduser("~\\Pictures\\ss.png")
-    img.save(img_path)
+# def screenshot():
+#     img = pyautogui.screenshot()
+#     img_path = os.path.expanduser("~\\Pictures\\ss.png")
+#     img.save(img_path)
 
 def wishme():
     # print("Welcome back sir!!")
@@ -232,10 +232,10 @@ def process_command(command):
         speak("You told me to remember that" + remember.read())
         print("You told me to remember that " + str(remember))
         return "You told me to remember that" + remember.read()
-    elif "screenshot" in command:
-        screenshot()
-        speak("I've taken screenshot, please check it")
-        return "Screenshot taken"
+    # elif "screenshot" in command:
+    #     screenshot()
+    #     speak("I've taken screenshot, please check it")
+    #     return "Screenshot taken"
     elif "offline" in command:
         quit()
         return "Shutting down"
