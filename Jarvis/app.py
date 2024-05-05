@@ -31,8 +31,6 @@ import speech_recognition as sr
 import wikipedia
 import webbrowser as wb
 import random
-import pyautogui
-import time
 
 
 app = Flask(__name__)
